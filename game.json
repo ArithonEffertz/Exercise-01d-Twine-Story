@@ -1,164 +1,234 @@
 {
-    "passages": [
-      {
-        "text": "You are standing at the end of a road before a small brick building. Around you is a forest.  A small stream flows out of the building and down a gully.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Road",
-        "pid": "1",
-        "position": {
-          "x": "412",
-          "y": "189"
+  "passages": [
+    {
+      "text": "//You've just crashed your car and you're lucky to be alive. Your phone is dead and you're in the middle of nowhere, surrounded by a thick forest.//\n\n[[Go into the Forest->Forest]]\n[[Follow the road back the way you came->Road]]",
+      "links": [
+        {
+          "name": "Go into the Forest",
+          "link": "Forest",
+          "pid": "2"
+        },
+        {
+          "name": "Follow the road back the way you came",
+          "link": "Road",
+          "pid": "3"
         }
-      },
-      {
-        "text": "You are in open forest, with a deep valley to one side.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Road]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Forest",
-        "pid": "2",
-        "position": {
-          "x": "187",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are inside a building, a well house for a large spring.\n\n[[Go North->Forest]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Road]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Road",
-            "pid": "1"
-          }
-        ],
-        "name": "Building",
-        "pid": "3",
-        "position": {
-          "x": "337",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You are in a valley in the forest beside a stream tumbling along a rocky bed.\n\n[[Go North->Road]]\n[[Go East->Building]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go East",
-            "link": "Building",
-            "pid": "3"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Valley",
-        "pid": "4",
-        "position": {
-          "x": "487",
-          "y": "339"
-        }
-      },
-      {
-        "text": "You have walked up a hill, still in the forest.  The road slopes back\ndown the other side of the hill.  There is a building in the distance.\n\n[[Go North->Forest]]\n[[Go East->Road]]\n[[Go South->Valley]]\n[[Go West->Hill]]",
-        "links": [
-          {
-            "name": "Go North",
-            "link": "Forest",
-            "pid": "2"
-          },
-          {
-            "name": "Go East",
-            "link": "Road",
-            "pid": "1"
-          },
-          {
-            "name": "Go South",
-            "link": "Valley",
-            "pid": "4"
-          },
-          {
-            "name": "Go West",
-            "link": "Hill",
-            "pid": "5"
-          }
-        ],
-        "name": "Hill",
-        "pid": "5",
-        "position": {
-          "x": "637",
-          "y": "339"
-        }
+      ],
+      "name": "Beginning",
+      "pid": "1",
+      "position": {
+        "x": "404",
+        "y": "170.5"
       }
-    ],
-    "name": "Adventure",
-    "startnode": "1",
-    "creator": "Twine",
-    "creator-version": "2.3.7",
-    "ifid": "1A8FFB75-8072-4382-BCAF-ADFA65B09385"
-  }
+    },
+    {
+      "text": "//You wander into the forest in search of help. Surely someone would be out here, right? You get deeper into the forest and when you look around, you're lost. Now you're hoping someone wouldn't be out here.//\n\n[[Go deeper into the forest->Forest 2]]\n[[Go back to the wreck->Lost]]",
+      "links": [
+        {
+          "name": "Go deeper into the forest",
+          "link": "Forest 2",
+          "pid": "5"
+        },
+        {
+          "name": "Go back to the wreck",
+          "link": "Lost",
+          "pid": "6"
+        }
+      ],
+      "name": "Forest",
+      "pid": "2",
+      "position": {
+        "x": "333",
+        "y": "320.5"
+      }
+    },
+    {
+      "text": "//You walk for what seems like ages until you come across the sight of a wreck. You rush over to find that it's your car.//\n\n[[Go into the Forest->Forest]]\n[[Follow the road again->Road 2]]",
+      "links": [
+        {
+          "name": "Go into the Forest",
+          "link": "Forest",
+          "pid": "2"
+        },
+        {
+          "name": "Follow the road again",
+          "link": "Road 2",
+          "pid": "4"
+        }
+      ],
+      "name": "Road",
+      "pid": "3",
+      "position": {
+        "x": "479",
+        "y": "320.5"
+      }
+    },
+    {
+      "text": "//You find yourself back at the same crash site. Something's not right here.//\n\n[[Follow the road->Road 2]]\n[[Go into the Forest->Forest]]",
+      "links": [
+        {
+          "name": "Follow the road",
+          "link": "Road 2",
+          "pid": "4"
+        },
+        {
+          "name": "Go into the Forest",
+          "link": "Forest",
+          "pid": "2"
+        }
+      ],
+      "name": "Road 2",
+      "pid": "4",
+      "position": {
+        "x": "479",
+        "y": "470.5"
+      }
+    },
+    {
+      "text": "//You wander farther into the forest and it somehow gets darker. As everything is about to turn pitch black, you see a light in the distance.//\n\n[[Go towards the light->Cabin]]\n[[Turn around->Lost]]",
+      "links": [
+        {
+          "name": "Go towards the light",
+          "link": "Cabin",
+          "pid": "11"
+        },
+        {
+          "name": "Turn around",
+          "link": "Lost",
+          "pid": "6"
+        }
+      ],
+      "name": "Forest 2",
+      "pid": "5",
+      "position": {
+        "x": "130",
+        "y": "468.5"
+      }
+    },
+    {
+      "text": "//You try walking back the way you came but the forest just gets thicker and you realize that the road is nowhere to be seen. You look around and see a silhouette of a little girl, right next to a giant shrub.//\n\n[[Leave->Run]]\n[[Go towards the girl->Certain Death]]",
+      "links": [
+        {
+          "name": "Leave",
+          "link": "Run",
+          "pid": "7"
+        },
+        {
+          "name": "Go towards the girl",
+          "link": "Certain Death",
+          "pid": "8"
+        }
+      ],
+      "name": "Lost",
+      "pid": "6",
+      "position": {
+        "x": "335",
+        "y": "589.5"
+      }
+    },
+    {
+      "text": "//You made the smart choice to leave the small girl because she gives off an eerie feeling. You turn around and as you do, you step on a branch.//\n\n\n//It's kind of loud.//\n\n\n//You turn around and see the little girl with her head turned completely around and her eyes glowing with a soulless white. The shrub next to her starts to vibrate and glow. 2 dark hands emerge from the shrub and it starts to move towards you.//\n\n[[Admire the scenery->Certain death 2]]\n[[BOOK IT->Run 2]]",
+      "links": [
+        {
+          "name": "Admire the scenery",
+          "link": "Certain death 2",
+          "pid": "9"
+        },
+        {
+          "name": "BOOK IT",
+          "link": "Run 2",
+          "pid": "10"
+        }
+      ],
+      "name": "Run",
+      "pid": "7",
+      "position": {
+        "x": "260",
+        "y": "739.5"
+      }
+    },
+    {
+      "text": "//You walk closer to the girl and see that her back is turned to you.//\n\n''Hello?''\n\n//No response.//\n\n''Hey.'' //You reach out and touch the girl's shoulder.//\n\n//She turns her head to look at you with soulless white eyes. You realize she's holding onto something with an outstretched hand towards the bush. The bush suddenly starts to shake and glow as a giant shadowy hand lurches out of the shrub and grabs you.//\n\n\n\n//Everything goes dark.//\n\n[[You died. Restart->Beginning]]",
+      "links": [
+        {
+          "name": "You died. Restart",
+          "link": "Beginning",
+          "pid": "1"
+        }
+      ],
+      "name": "Certain Death",
+      "pid": "8",
+      "position": {
+        "x": "838",
+        "y": "673.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Certain death 2",
+      "pid": "9",
+      "position": {
+        "x": "185",
+        "y": "889.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Run 2",
+      "pid": "10",
+      "position": {
+        "x": "335",
+        "y": "889.5"
+      }
+    },
+    {
+      "text": "//You arive at a cabin. You peer through the windows and see a basic kitchen setup with the oven on and a small little dining area.//\n\n[[Knock->Polite]]\n[[Bust in->Rude Death]]\n[[Leave->Lost]]",
+      "links": [
+        {
+          "name": "Knock",
+          "link": "Polite",
+          "pid": "12"
+        },
+        {
+          "name": "Bust in",
+          "link": "Rude Death",
+          "pid": "13"
+        },
+        {
+          "name": "Leave",
+          "link": "Lost",
+          "pid": "6"
+        }
+      ],
+      "name": "Cabin",
+      "pid": "11",
+      "position": {
+        "x": "130",
+        "y": "618.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Polite",
+      "pid": "12",
+      "position": {
+        "x": "55",
+        "y": "768.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Rude Death",
+      "pid": "13",
+      "position": {
+        "x": "175",
+        "y": "768.5"
+      }
+    }
+  ],
+  "name": "Adventure 3",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.9",
+  "ifid": "CF913B21-48EA-4256-8C89-F73318731742"
+}
